@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Sushi - Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>SAKURA<span>SUSHI</span></h1>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Cardápio</a></li>
+                    <li><a href="novidades.html">Novidades</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Estamos ansiosos para receber você.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="grid">
+                <div class="contact-form-container">
+                    <h2 style="margin-bottom: 1.5rem; color: var(--secondary);">Envie uma mensagem</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                                <option value="reserva">Reserva de Mesa</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="duvida">Dúvida</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%; cursor: pointer;">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h2 style="margin-bottom: 1.5rem; color: var(--secondary);">Nossos Proprietários</h2>
+                    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+                        <div class="card">
+                            <img src="img/ft1.png.jpg" alt="Pedro Henrique" style="height: 150px;">
+                            <div class="card-body" style="padding: 1rem;">
+                                <h4 style="font-size: 1rem;">Pedro Henrique</h4>
+                                <p style="font-size: 0.8rem; margin-bottom: 0;">Mestre Sushiman</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/ft2.png.jpg" alt="Caio Vinicius" style="height: 150px;">
+                            <div class="card-body" style="padding: 1rem;">
+                                <h4 style="font-size: 1rem;">Caio Vinicius</h4>
+                                <p style="font-size: 0.8rem; margin-bottom: 0;">Gestão e Hospitalidade</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 style="margin-bottom: 1.5rem; color: var(--secondary);">Informações</h2>
+                    <div style="margin-bottom: 2rem;">
+                        <p style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Av. das Américas, 3900 - Shopping VillageMall<br>Barra da Tijuca, Rio de Janeiro/RJ</p>
+                        <p style="margin-bottom: 1rem;"><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i> (21) 99164-4611</p>
+                        <p style="margin-bottom: 1rem;"><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> contato@sakurasushi.com.br</p>
+                    </div>
+
+                    <h3 style="margin-bottom: 1rem; color: var(--secondary);">Horário</h3>
+                    <p>Segunda a Quinta: 18:00 - 23:30</p>
+                    <p>Sexta e Sábado: 18:00 - 00:30</p>
+                    <p>Domingo: Fechado</p>
+
+                    <div class="social-links" style="margin-top: 2rem; text-align: left;">
+                        <a href="https://www.instagram.com/ph.henriques_/" target="_blank" style="margin-right: 15px; font-size: 1.5rem; color: var(--secondary);"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="margin-right: 15px; font-size: 1.5rem; color: var(--secondary);"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="font-size: 1.5rem; color: var(--secondary);"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>SAKURA<span>SUSHI</span></h3>
+                    <p>Sabor e tradição desde 2010.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/ph.henriques_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/caio.dicarlan/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="copy">&copy; 2026 Sakura Sushi - Restaurante Japonês. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

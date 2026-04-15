@@ -1,0 +1,281 @@
+
+
+:root {
+    --primary: #e91e63; /* Rosa Sakura */
+    --secondary: #333333; /* Cinza Escuro */
+    --accent: #f9f9f9; /* Fundo suave */
+    --text: #444444;
+    --white: #ffffff;
+    --border: #eeeeee;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--white);
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header & Menu */
+header {
+    background-color: var(--white);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--accent);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d81b60;
+}
+
+/* Seções */
+section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--secondary);
+}
+
+/* Grid e Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-body h3 {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+/* Busca no Cardápio */
+.search-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: var(--primary);
+}
+
+/* Formulário */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    height: 120px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 3rem 0 1.5rem;
+    margin-top: 3rem;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #555;
+    margin-bottom: 1.5rem;
+}
+
+.copy {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--white);
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border);
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
