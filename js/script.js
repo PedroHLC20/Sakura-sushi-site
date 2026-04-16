@@ -27,22 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Filtro do Cardápio
-    const searchInput = document.querySelector('#search-input');
-    const menuItems = document.querySelectorAll('#menu-grid .card');
-
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-            const term = e.target.value.toLowerCase();
-            
-            menuItems.forEach(item => {
-                const name = item.getAttribute('data-name');
-                if (name.includes(term)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    }
-});
+   
