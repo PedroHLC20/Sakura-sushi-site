@@ -166,24 +166,7 @@ section {
     font-size: 1.2rem;
 }
 
-/* Busca no Cardápio */
-.search-container {
-    text-align: center;
-    margin-bottom: 3rem;
-}
 
-#search-input {
-    width: 100%;
-    max-width: 500px;
-    padding: 0.8rem 1.5rem;
-    border: 1px solid var(--border);
-    border-radius: 25px;
-    font-size: 1rem;
-    outline: none;
-}
-
-#search-input:focus {
-    border-color: var(--primary);
 }
 
 /* Formulário */
